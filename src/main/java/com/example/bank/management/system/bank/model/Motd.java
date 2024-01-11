@@ -7,4 +7,3 @@ public class Motd {
    private String msg;
    private String url;
 }
-///
