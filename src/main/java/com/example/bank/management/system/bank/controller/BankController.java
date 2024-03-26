@@ -44,10 +44,4 @@ public class BankController {
         return new ResponseEntity<Sbi_Bank>(bankService.profile_update(profileUpdation),HttpStatus.CREATED);
     }
 
-
-    @GetMapping("/currencyrate")
-    public CurrencyRate currencyRate(){
-        return bankService.currency_rate();
-    }
-
 }

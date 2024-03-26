@@ -66,11 +66,4 @@ public class BankServiceImpl implements BankService{
         //return sbi_bank;
     }
 
-    @Override
-    public CurrencyRate currency_rate() {
-        String url="https://api.exchangerate.host/latest";
-        RestTemplate restTemplate=new RestTemplate();
-        CurrencyRate currencyRate=restTemplate.getForObject(url,CurrencyRate.class);
-        return currencyRate;
-    }
 }
